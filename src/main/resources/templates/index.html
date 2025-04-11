@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Landing Page</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div th:replace="components/header :: header"></div>
+
+<main>
+    <section class="hero">
+        <h1>Bem-vindo à Nossa Solução!</h1>
+        <p>Descubra como podemos transformar seu negócio com tecnologia.</p>
+        <a href="#contato" class="btn">Fale Conosco</a>
+    </section>
+
+    <section class="features">
+        <h2>Recursos</h2>
+        <ul>
+            <li>🚀 Rápido e eficiente</li>
+            <li>🔒 Seguro</li>
+            <li>⚙️ Totalmente personalizável</li>
+        </ul>
+    </section>
+</main>
+
+<div th:replace="components/footer :: footer"></div>
+
+</body>
+</html>
